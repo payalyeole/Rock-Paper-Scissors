@@ -1,0 +1,154 @@
+/* General body styles */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #2c3e50, #4ca1af) no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header */
+header h1 {
+    font-size: 3rem;
+    margin: 30px 0;
+    text-shadow: 2px 2px 5px #000000;
+}
+
+/* Subtitle */
+.subtitle {
+    font-size: 1.2rem;
+    margin: 10px 0 40px;
+    color: #d4d4dc;
+}
+
+/* Mode selection buttons */
+.mode-selection {
+    margin-top: 20px;
+}
+
+.mode-selection button {
+    background-color: #4ca1af;
+    border: none;
+    color: #fff;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.mode-selection button:hover {
+    background-color: #3a8f97;
+}
+
+/* Game Area */
+#gameArea {
+    margin-top: 40px;
+}
+
+#player1Area, #player2Area {
+    display: flex;
+    justify-content: space-evenly; /* Space between buttons */
+    margin: 20px auto;
+    flex-wrap: wrap; /* Wrap buttons to the next line if needed */
+    width: 600px;
+    padding: 20px;
+}
+
+/* Result Area */
+#resultArea {
+    margin-top: 30px;
+    font-size: 1.5rem;
+    color: #d4d4dc;
+}
+
+#resultArea button {
+    background-color: #4ca1af;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#resultArea button:hover {
+    background-color: #3a8f97;
+}
+
+/* Choice buttons */
+.choices {
+    display: flex;
+    justify-content: center;
+    gap: 70px; /* Space between buttons */
+    margin: 20px auto;
+    flex-wrap: wrap; /* Allow wrapping */
+   	padding: 20px
+}
+
+.choices button {
+    background: none;
+    border: 2px solid #ffffff;
+    border-radius: 15px;
+    padding: 15px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    color: #ffffff;
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 10px; /* Space around each button */
+}
+
+.choices button img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.choices button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    border-color: #4ca1af;
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+    font-size: 0.9rem;
+    text-shadow: 1px 1px 3px #000000;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .choices {
+        gap: 15px;
+    }
+
+    .choices button {
+        width: 100%; /* Full-width for small screens */
+    }
+}
+
+
+.play-again {
+            padding: 10px 20px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+.play-again:hover {
+    background: #0056b3;
+}
